@@ -1,0 +1,20 @@
+{
+  "name": "booking-system",
+  "version": "1.0.0",
+  "description": "A basic template",
+  "license": "ISC",
+  "author": "Anubhav Sultania",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "http-status-code": "^2.1.0",
+    "http-status-codes": "^2.3.0",
+    "nodemon": "^3.1.14",
+    "winston": "^3.19.0"
+  }
+}

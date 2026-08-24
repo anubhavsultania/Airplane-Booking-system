@@ -13,12 +13,6 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: "airplaneId",
         onDelete: "CASCADE",
       });
-      this.belongsTo(models.Airport, {
-        foreignKey: "code",
-      });
-      this.belongsTo(models.Airport, {
-        foreignKey: "code",
-      });
     }
   }
   Airplane.init(
@@ -26,6 +20,9 @@ module.exports = (sequelize, DataTypes) => {
       modelNumber: {
         type: DataTypes.STRING,
         allowNull: false,
+        validate: {
+          isAlphanumeric: true,
+        },
       },
       capacity: {
         type: DataTypes.INTEGER,

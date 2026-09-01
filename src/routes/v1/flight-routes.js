@@ -9,4 +9,9 @@ router.post(
   FlightController.createFlight,
 );
 
+router.get(
+  "/",
+  FlightController.getallFlights,
+);
+
 module.exports = router;

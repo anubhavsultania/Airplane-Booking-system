@@ -24,7 +24,7 @@ async function createFlight(data) {
   }
 }
 
-async function getallFlights(query) {
+async function getAllFlights(query) {
   let customFilter = {};
   let sortFilter = {};
   const endingTripTime = " 23:59:00";
@@ -70,4 +70,4 @@ async function getallFlights(query) {
   }
 }
 
-module.exports = { createFlight, getallFlights };
+module.exports = { createFlight, getAllFlights };
